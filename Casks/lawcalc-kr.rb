@@ -7,6 +7,11 @@ cask "lawcalc-kr" do
   desc "한국 법률 실무 계산 워크벤치 (이자·상속·소송비용·변제충당·손해배상)"
   homepage "https://github.com/kyungseopk1m/lawcalc-kr"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   depends_on :macos
 
   app "LawCalc Korea.app"
